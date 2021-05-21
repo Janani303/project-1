@@ -1,33 +1,269 @@
-span {
-    font-weight:900;
-    font-size:3em;
-    margin-left: 10px;
-    
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 16px;
 }
 
-img {
-    width:230px;
-    height:300px;
-    border-radius: 20px;
+/* -------------------whole elem------------------------ */
+
+/* -------------------modeChange------------- */
+
+/* ---------------------light mode------------------ */
+
+.light-body {
+    color: #252525;
+    background: white;
+}
+
+.light-toggle {
+    color: white;
+    background: #252525;
+}
+
+.light-profile-img {
+    border: 3px solid #e2d7d7;
+}
+
+.light-table {
+    border: 1px solid #000000;
+}
+
+/* ------------------light mode------------------- */
+
+/* -------------------dark mode------------------- */
+
+.dark-body  {
+    color: white;
+    background: #252525;
+}
+
+.dark-toggle {
+    color: #252525;
+    background: white;
+}
+
+.dark-profile-img {
+    border: 3px solid #585858;
+}
+
+.dark-table {
+    border: 1px solid white;
+}
+
+/* -----------------dark mode-------------------- */
+
+
+
+/* -------------------modeChange------------- */
+
+
+/* ---------------------body--------------------------- */
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mode-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border-radius: 50px;
+    padding: 5px;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* -----------------------body-------------------------- */
+
+/* ------------------------header----------------------- */
+
+.header {
+    width: 100%;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+dt {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:larger;
+}
+
+#profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: url("./priya.jpg") no-repeat;
+    background-size: 300px 300px;
+    background-position-x: -70px;
+    /* border: 3px solid #585858; */
+}
+
+/* --------------------header------------------------------ */
+
+/* ----------------------contacts-------------------------- */
+
+#contacts {
+    margin: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 52px;
+    background: white;
+    border-radius: 50px;
+    height: 60px;
+}
+
+#contacts div img {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 28px;
+}
+
+/* ----------------------contacts-------------------------- */
+
+
+
+/* ----------------------table------------------------------ */
+
+.table-wrapper {
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.table-wrapper::-webkit-scrollbar {
+    width: 12px;
+}
+
+table caption {
+    padding: 4px;
 }
 
 table {
     width:70%;
     text-align:center;
     margin: 0 auto;
-    border:1px solid white;
+    /* border:1px solid white; */
     border-collapse: collapse;
 }
 
-th {
-    border-bottom:1px solid #ffffff;
+
+td,th {
+    padding: 16px;
+    font-weight: 600;
 }
 
-#github-link  {
-    text-align:center;
+/* ----------------------table------------------------- */
+
+/* -----------------------skills--------------------------- */
+
+.skill-title h1 {
+    text-align: center;
 }
 
-a {
-    text-decoration:none;
-    color: white;
+.skills {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-wrapper {
+    display: grid;
+    width: 70%;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-gap:  64px 128px;
+    margin-bottom: 16px;
+}
+
+/* ----------------------skills------------------------- */
+
+/* ----------------------for tablets,mobiles---------------------- */
+
+@media screen and (max-width: 770px) {
+
+    .header-wrapper {
+        flex-direction: column-reverse;
+    }
+    
+    body {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    .contacts {
+        margin-bottom: 36px;
+        margin-top: 0px;
+    }
+    
+    .table-wrapper {
+        transform: scaleX(0.5) scaleY(0.5);
+        margin-top: -120px;
+    }
+
+    .skills {
+        margin-top: -120px;
+    }
+
+    .skills-wrapper {
+        display: grid;
+        width: 70%;
+        grid-template-columns: 100px 100px;
+        grid-gap:  64px 128px;
+        margin-left: 40px;
+    }
+
+    .skills img {
+        width: 64px;
+        height: 64px;
+    }
+
+    .mongodb {
+        grid-area: 5 / 1 / 6 / 2;
+    }
+    
+    .python {
+        grid-area: 5 / 2 / 6 / 3;
+    }
+    
+}
+
+/* -----------------------for tablets,mobiles----------------------- */
+
+/* ----------------------except tablets,mobiles--------------------- */
+
+@media screen and (min-width: 770px) {
+
+    .mongodb {
+        grid-area: 3 / 2 / 4 / 3;
+    }
+    
+    .python {
+        grid-area: 3 / 3 / 4 / 4;
+    }
 }
