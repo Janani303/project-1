@@ -112,7 +112,7 @@ dt {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background: url("./priya.jpg") no-repeat;
+    background: url("./Priya.jpg") no-repeat;
     background-size: 300px 300px;
     background-position-x: -70px;
     /* border: 3px solid #585858; */
@@ -267,3 +267,4 @@ td,th {
         grid-area: 3 / 3 / 4 / 4;
     }
 }
+    
