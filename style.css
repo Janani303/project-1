@@ -242,13 +242,8 @@ td,th {
         width: 64px;
         height: 64px;
     }
-
-    .mongodb {
-        grid-area: 5 / 1 / 6 / 2;
-    }
-    
-    .python {
-        grid-area: 5 / 2 / 6 / 3;
+     .python {
+        grid-area: 2 / 1/ 6 / 2;
     }
     
 }
@@ -259,12 +254,8 @@ td,th {
 
 @media screen and (min-width: 770px) {
 
-    .mongodb {
-        grid-area: 3 / 2 / 4 / 3;
-    }
-    
     .python {
-        grid-area: 3 / 3 / 4 / 4;
+        grid-area: 3 / 2 / 4 / 3;
     }
 }
     
