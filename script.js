@@ -31,5 +31,5 @@ function changeMode() {
     table.classList.toggle("light-table");
     th.classList.toggle("dark-toggle");
     th.classList.toggle("light-toggle");
-
 }
+modeToggle.addEventListener("click", changeMode);
