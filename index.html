@@ -1,116 +1,37 @@
-DOCTYPE html>
-<html>
-
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="Janani Priya, Janani Priya-Profile, Janani Priya-Resume">
-    <title>Janani Priya-Profile</title>
-    <link rel="shortcut icon" href="./logo.jpg" type="image/x-icon">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-  </head>
-
-  <!--------------------- head ----------------------------->
-  
-  <button id="mode-toggle" class="dark-toggle">Light</button>
-  
-  <body id="body" class="dark-body">
-    
-    <!------------------- header --------------------------->
-    <div class="header">
-      <div class="header-wrapper">
-        <div id="profile">
-          <dl>
-            <dt>
-              Arise,awake and stop not <br>
-              until the goal is achieved
-            </dt>
-            <dd>
-              <h3>- K JANANI PRIYA</h3>
-            </dd>
-          </dl>
-        </div>
-        <div id="profile-img" class="dark-profile-img"></div>
-      </div>
-    </div>
-
-    <!------------------- header --------------------------->
-    
-    <!-- -----------------contact------------------------ -->
-    <div id="contacts">
-      <div>
-        <a href="mailto:s.jananijanani4501@gmail.com.com?subject=From%20your%20website" target="_blank" rel="noopener noreferrer">
-          <img src="./gmail.svg" alt="gmail" />
-        </a>
-      </div>
-      <div>
-        <a href="http://www.github.com/Janani303/" target="_blank" rel="noopener noreferrer">
-          <img src="./github.svg" alt="github">
-        </a>
-      </div
-       <div>
-        <a href="http://www.instagram.com/ms_pearl_queen?r=nametag/" target="_blank" rel="noopener noreferrer">
-          <img src="./instagram.svg" alt="instagram">
-        </a>
-      </div>
-    </div>
- 
-
-
-
-    <!-- ------------------contact---------------------- -->
-
-    <!-- ----------------- table ------------------------- -->
-
-    <div class="table-wrapper">
-      <table id="table" class="dark-table">
-        <caption><h1>Educational Qualification</h1></caption>
-        <tr id="th" class="dark-toggle">
-          <th>Qualification</th>
-          <th>Institution</th>
-          <th>Year of Passing</th>
-          <th>Board/ <br> University</th>
-          <th>Percentage/CGPA</th>
-        </tr>
-        <tr>
-          <td>BE/ECE</td>
-          <td>Government College of Engineering, Thanjavur.</td>
-          <td>2020-2024</td>
-          <td>Anna University</td>
-          <td>9.3</td>
-        </tr>
-        <tr>
-          <td>HSC</td>
-          <td>Velavan Higher Secondary School,palavanchipalayam.</td>
-          <td>2019-2020</td>
-          <td>State Board</td>
-          <td>95%</td>
-        </tr>
-        <tr>
-          <td>SSLC</td>
-          <td>velavan Higher Secondary School,palavanchipayam.</td>
-          <td>2017-2018</td>
-          <td>State Board</td>
-          <td>90%</td>
-        </tr>
-      </table>
-    </div>
-
-    <!-- ------------------- table ----------------------- -->
-
-    <!-- -------------------- skills --------------------- -->
-    
-    <div class="skills">
-      <div class="skill-title">
-        <h1>My Skills</h1>
-      </div>
-      <div class="skills-wrapper">
-        <img src="./html5.svg" alt="Html5">
-        <img src="./css-3.svg" alt="CSS3">
-        <img class="python" src="./python-5.svg" alt="Python">
-      </div>
-    </div>
-
-    <!-- ------------------- skills -------------------- -->
     <script src="script.js"></script>
-  </body>
+    <title>Weather App</title>
+</head>
+<body class="text-center">
+    <main>
+        <h1 class="banner">Weather</h1><br><br><br><br><br>
+        <div id="input">
+            <input type="text" name="City Name" id="city-input" placeholder="Search city">
+        </div><br><br><br>
+        <button type="button" onclick="searchCity()">Search</button><br><br><br>
+        <div id="weather-output">
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 id="city-name">----</h4><br>
+                    </div>
+                    <div id="card-body">
+                        <h1 id="weather-type">----</h1>
+                        <ul class="list">
+                            <li>Temp:<span id="temp">--</span>*</li>
+                            <li>Min Temp:<span id="min-temp">--</span>*</li>
+                            <li>Max Temp:<span id="max-temp">--</span>*</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
 </html>
