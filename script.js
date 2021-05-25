@@ -1,4 +1,3 @@
-
 /* Number Guessing Game JavaScript */
 
 var secretNumber = 0,
@@ -55,5 +54,3 @@ function userGuessed() {
 
 window.onload = function() {
 	newGame();
-	document.getElementById('buttonArea').addEventListener('click', userGuessed);
-};
