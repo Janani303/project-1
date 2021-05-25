@@ -1,83 +1,43 @@
-*  {
-  background-color:green;
+
+/* Number Guessing Game CSS */
+
+body {
+	margin: 10px;
+	background-color: #cccccc;
+	font-family: Arial, sans-serif;
 }
 
-  {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: 0;
-  /* position: absolute;
-  left: 50%;
-  transform: translateX(-50%); */
+.button {
+	margin-top: 10px;
+	border-radius: 10px;
+	border-color: #000000;
+	border-style: solid;
+	border-width: 1px;
+	background-color: orange;
+	color:white;
+	width: 20%;
+	padding: 5px;
+	text-align: center;
+	font-weight: bold;
 }
 
-.banner {
-  color: yellow;
-  font-family: 'Courier New', Courier, monospace;
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+#historyArea {
+	margin-top: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-left:20px;
 }
 
-input[type='text'] {
-  border: 2px solid rgb(190, 185, 185);
-  border-radius: 5px;
-  padding: 10px;
-  width: 50vw;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+
+#game {
+	background-color: #ffffff;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #cccccc;
+	padding: 10px;
 }
 
-input[type='text']:focus {
-  border: 2px solid blue;
+#statusArea {
+	font-size: 120%;
 }
-
-button {
-  padding: 5px;
-  margin-top: 10px;
-  color: white;
-  background-color: cyan-blue;
-  border-radius: 5px;
-  width: 15vh;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-#city-name {
-  border: 1px solid rgb(190, 185, 185);
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 10px;
-  width: 50vw;
-  text-align: center;
-  padding: 10px;
-}
-
-#weather-type {
-  text-align: center;
-}
-
-.list {
-  list-style: none;
-}
-
-li {
-  text-align: center;
-  padding: 4px;
-}
-
-#card-body {
-  border: 1px solid orange;
-  width: 50vw;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 10px;
-  margin-top: 5vh;
-}
-© 2021 GitHub, Inc.
